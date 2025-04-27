@@ -106,7 +106,7 @@ namespace Student_Api.Controllers
         public ActionResult DeleteStudent(int id)
         {
             if (id < 0)
-                return BadRequest("Bac Request");
+                return BadRequest("Bad Request");
             else
             {
                 if (clsStudents.Delete(id))
